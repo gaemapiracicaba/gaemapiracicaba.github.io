@@ -1,0 +1,42 @@
+Michel Metran:
+  name: "Michel Metran"
+  avatar: "/assets/images/avatar.png"
+  bio: "Assessor Técnico"
+  location: "Piracicaba, SP"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:michelmetran@gmail.com"
+    - label: "Site"
+      icon: "fas fa-fw fa-link"
+      url: "https://michelmetran.github.io"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/michelmetran"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/michelmetran"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/michelmetran"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://facebook.com/michelmetran"
+    - label: "StackOverflow"
+      icon: "fab fa-fw fa-stack-overflow"
+      url: "https://stackoverflow.com/users/6003328/michel-metran"
+
+
+GAEMA Piracicaba:
+  name: GAEMA Piracicaba"
+  avatar: "/assets/images/logo.png"
+  bio: "Grupo de Atuação Especial de Defesa do Meio Ambiente"
+  location: "Brasil"
+  links:
+    - label: "Site"
+      icon: "fas fa-fw fa-link"
+      url: "https://gaemapiracicaba.github.io"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/gaemapiracicaba"
+
