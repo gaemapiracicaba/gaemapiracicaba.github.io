@@ -62,7 +62,7 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name: GAEMA Piracicaba"
+  name: "GAEMA Piracicaba"
   avatar: "/assets/images/logo.png"
   bio: "Grupo de Atuação Especial de Defesa do Meio Ambiente"
   location: "Brasil"
