@@ -13,12 +13,11 @@ tags:
 #categories: [Blog]
 #tags: [Post Formats, notice]
 #link: https://github.com
-author:
-  - Michel Metran
-  - GAEMA Piracicaba
+author: Michel Metran
 
 ---
 
+Sobre mineração e obrigatoriedade de restauração da cava
 
 <!--more-->
 
