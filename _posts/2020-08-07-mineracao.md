@@ -9,10 +9,11 @@ tags:
   - Post Formats
   - readability
   - standard
+
 #categories: [Blog]
 #tags: [Post Formats, notice]
 #link: https://github.com
-#author: Michel Metran
+author: Michel Metran
 
 ---
 
