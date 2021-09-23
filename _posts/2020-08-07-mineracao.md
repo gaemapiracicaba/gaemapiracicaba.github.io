@@ -13,11 +13,12 @@ tags:
 #categories: [Blog]
 #tags: [Post Formats, notice]
 #link: https://github.com
-author: Michel Metran
+author:
+  - Michel Metran
+  - GAEMA Piracicaba
 
 ---
 
-Com a finalidade de remunerar criadores de conteúdo, existem plataformas disponíveis na web que auxiiam você a obter financiamiento *online*.
 
 <!--more-->
 
