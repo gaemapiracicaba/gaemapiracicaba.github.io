@@ -9,6 +9,7 @@ tags:
   - Post Formats
   - readability
   - standard
+permalink: /map/
 #categories: [Blog]
 #tags: [Post Formats, notice]
 #link: https://github.com
