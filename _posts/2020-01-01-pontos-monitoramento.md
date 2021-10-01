@@ -15,6 +15,6 @@ author: Michel Metran
 
 Pontos de Monitoramento
 
-<iframe src="https://raw.githack.com/gaemapiracicaba/ic-05-14/main/maps/map.html?token=ACPE3CRWJZL6G77ZFVJDA3DBK2CVE" width="100%" height="480"  frameborder="0" allowfullscreen></iframe>
+<iframe src="https://raw.githack.com/gaemapiracicaba/ic-05-14/main/maps/map.html?token=ACPE3CRWJZL6G77ZFVJDA3DBK2CVE" width="640" height="480"  frameborder="0" allowfullscreen></iframe>
 
 <!--more-->
