@@ -113,6 +113,14 @@ defaults:
 #     related: true
 #     toc: true
 #     toc_sticky: true
+  # _maps
+  - scope:
+      path: "maps"
+      type: maps
+    values:
+      layout: single
+      author_profile: false
+
 
 category_archive:
   type: liquid
