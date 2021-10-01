@@ -14,6 +14,6 @@ author: Michel Metran
 
 Pontos de Monitoramento
 
-<iframe src="https://gaemapiracicaba.github.io/assets/maps/map.html" width="640" height="480"  frameborder="0" allowfullscreen></iframe>
+<iframe src="https://gaemapiracicaba.github.io/assets/maps/ic-05-14/map.html" width="640" height="480"  frameborder="0" allowfullscreen></iframe>
 
 <!--more-->
