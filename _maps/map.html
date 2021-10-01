@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f68d39c7e1524b4a892d678d5835c3be {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f68d39c7e1524b4a892d678d5835c3be" ></div>
+        
+</body>
+<script>    
+    
+            var map_f68d39c7e1524b4a892d678d5835c3be = L.map(
+                "map_f68d39c7e1524b4a892d678d5835c3be",
+                {
+                    center: [0, 0],
+                    crs: L.CRS.EPSG3857,
+                    maxBounds: [[-23.2244012, -47.98043249999999], [-22.274902800000003, -46.51923420000001]],
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_21d17a2046c440baa0520129e0ec7107 = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=p\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "\u003ca href=\"https://www.google.com/maps\" target=\"blank\"\u003eGoogle Terrain\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 21, "maxZoom": 21, "minZoom": 8, "noWrap": false, "opacity": 1, "subdomains": ["mt0", "mt1", "mt2", "mt3"], "tms": false}
+            ).addTo(map_f68d39c7e1524b4a892d678d5835c3be);
+        
+    
+            var tile_layer_a624f504f0d444958d744b293cbb5cce = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=y\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "\u003ca href=\"https://www.google.com/maps\" target=\"blank\"\u003eGoogle Hybrid\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 21, "maxZoom": 21, "minZoom": 8, "noWrap": false, "opacity": 1, "subdomains": ["mt0", "mt1", "mt2", "mt3"], "tms": false}
+            ).addTo(map_f68d39c7e1524b4a892d678d5835c3be);
+        
+    
+            var tile_layer_dca91bbea73644ab8a4c60ba7e0fe528 = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=m\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "\u003ca href=\"https://www.google.com/maps\" target=\"blank\"\u003eGoogle Streets\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 21, "maxZoom": 21, "minZoom": 8, "noWrap": false, "opacity": 1, "subdomains": ["mt0", "mt1", "mt2", "mt3"], "tms": false}
+            ).addTo(map_f68d39c7e1524b4a892d678d5835c3be);
+        
+    
+            var tile_layer_0403d5988bfd4ca885e00c067585893c = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "\u003ca href=\"https://www.google.com/maps\" target=\"blank\"\u003eGoogle Satelite\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 21, "maxZoom": 21, "minZoom": 8, "noWrap": false, "opacity": 1, "subdomains": ["mt0", "mt1", "mt2", "mt3"], "tms": false}
+            ).addTo(map_f68d39c7e1524b4a892d678d5835c3be);
+        
+    
+        function geo_json_7dfbab01eece4ffc9cd326eea35224ef_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#DC143C", "fillColor": "#DC143C", "fillOpacity": 0.3, "weight": 1};
+            }
+        }
+        function geo_json_7dfbab01eece4ffc9cd326eea35224ef_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.6, "weight": 3};
+            }
+        }
+        function geo_json_7dfbab01eece4ffc9cd326eea35224ef_pointToLayer(feature, latlng) {
+            var opts = {};
+            
+            const iconOptions = {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            const iconRootAlias = L.AwesomeMarkers
+            opts.icon = new iconRootAlias.Icon(iconOptions)
+            
+            let style = geo_json_7dfbab01eece4ffc9cd326eea35224ef_styler(feature)
+            Object.assign(opts.icon.options, style)
+            
+            return new L.Marker(latlng, opts)
+        }
+
+        function geo_json_7dfbab01eece4ffc9cd326eea35224ef_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_7dfbab01eece4ffc9cd326eea35224ef.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_7dfbab01eece4ffc9cd326eea35224ef_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_7dfbab01eece4ffc9cd326eea35224ef = L.geoJson(null, {
+                smoothFactor: 1.0,
+                onEachFeature: geo_json_7dfbab01eece4ffc9cd326eea35224ef_onEachFeature,
+            
+                style: geo_json_7dfbab01eece4ffc9cd326eea35224ef_styler,
+                pointToLayer: geo_json_7dfbab01eece4ffc9cd326eea35224ef_pointToLayer
+        });
+
+        function geo_json_7dfbab01eece4ffc9cd326eea35224ef_add (data) {
+            geo_json_7dfbab01eece4ffc9cd326eea35224ef
+                .addData(data)
+                .addTo(map_f68d39c7e1524b4a892d678d5835c3be);
+        }
+            geo_json_7dfbab01eece4ffc9cd326eea35224ef_add({"bbox": [-47.67758611111111, -23.662841666666665, -46.389725, -22.63285], "features": [{"bbox": [-46.54635, -23.10346666666667, -46.54635, -23.10346666666667], "geometry": {"coordinates": [-46.54635, -23.10346666666667], "type": "Point"}, "id": "0", "properties": {"Corpo H\u00eddrico": "Rio Atibaia", "ID": 1, "Latitude": "23\u00b006\u201912,48\u201dS", "Longitude": "46\u00b032\u201946,86\u201dO", "Ordem": 1, "Sondas Local": "1\u00ba \u2013 Capta\u00e7\u00e3o de Atibaia (1\u00aa a ser instalada)", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003e1\u00ba \u2013 Capta\u00e7\u00e3o de Atibaia (1\u00aa a ser instalada)\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Atibaia\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e23\u00b006\u201912,48\u201dS\u003c/b\u003e / \u003cb\u003e46\u00b032\u201946,86\u201dO\u003c/b\u003e\n    \u003cBR\u003eOrdem(?): \u003cb\u003e1\u003c/b\u003e\n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.13740833333333, -22.74488888888889, -47.13740833333333, -22.74488888888889], "geometry": {"coordinates": [-47.13740833333333, -22.74488888888889], "type": "Point"}, "id": "1", "properties": {"Corpo H\u00eddrico": "Rio Atibaia", "ID": 2, "Latitude": "22\u00b044\u201941,60\u201dS", "Longitude": "47\u00b008\u201914,67\u201dO", "Ordem": 1, "Sondas Local": "2\u00ba \u2013 Posto Acima Paul\u00ednia", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003e2\u00ba \u2013 Posto Acima Paul\u00ednia\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Atibaia\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e22\u00b044\u201941,60\u201dS\u003c/b\u003e / \u003cb\u003e47\u00b008\u201914,67\u201dO\u003c/b\u003e\n    \u003cBR\u003eOrdem(?): \u003cb\u003e1\u003c/b\u003e\n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-46.54239444444444, -22.9056, -46.54239444444444, -22.9056], "geometry": {"coordinates": [-46.54239444444444, -22.9056], "type": "Point"}, "id": "2", "properties": {"Corpo H\u00eddrico": "Rio Jaguari", "ID": 3, "Latitude": "22\u00b054\u201920,16\u201dS", "Longitude": "46\u00b032\u201932,62\u201dO", "Ordem": 2, "Sondas Local": "2\u00ba \u2013 Capta\u00e7\u00e3o de Bragan\u00e7a (2\u00aa a ser instalada)", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003e2\u00ba \u2013 Capta\u00e7\u00e3o de Bragan\u00e7a (2\u00aa a ser instalada)\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Jaguari\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e22\u00b054\u201920,16\u201dS\u003c/b\u003e / \u003cb\u003e46\u00b032\u201932,62\u201dO\u003c/b\u003e\n    \u003cBR\u003eOrdem(?): \u003cb\u003e2\u003c/b\u003e\n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.27845555555555, -23.662841666666665, -47.27845555555555, -23.662841666666665], "geometry": {"coordinates": [-47.27845555555555, -23.662841666666665], "type": "Point"}, "id": "3", "properties": {"Corpo H\u00eddrico": "Rio Jaguari", "ID": 4, "Latitude": "23\u00b039\u201946,23\u201dS", "Longitude": "47\u00b016\u201942,44\u201dO", "Ordem": 2, "Sondas Local": "Capta\u00e7\u00e3o de Limeira", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eCapta\u00e7\u00e3o de Limeira\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Jaguari\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e23\u00b039\u201946,23\u201dS\u003c/b\u003e / \u003cb\u003e47\u00b016\u201942,44\u201dO\u003c/b\u003e\n    \u003cBR\u003eOrdem(?): \u003cb\u003e2\u003c/b\u003e\n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.387902777777775, -22.697519444444445, -47.387902777777775, -22.697519444444445], "geometry": {"coordinates": [-47.387902777777775, -22.697519444444445], "type": "Point"}, "id": "4", "properties": {"Corpo H\u00eddrico": "Rio Piracicaba", "ID": 5, "Latitude": "22\u00b041\u201951,07\u201dS", "Longitude": "47\u00b023\u201916,45\u201dO", "Ordem": 3, "Sondas Local": "Em Santa B\u00e1rbara d\u2019Oeste, \u00e0 jusante do Quilombo e Tatu (PCAB02135)", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eEm Santa B\u00e1rbara d\u2019Oeste, \u00e0 jusante do Quilombo e Tatu (PCAB02135)\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Piracicaba\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e22\u00b041\u201951,07\u201dS\u003c/b\u003e / \u003cb\u003e47\u00b023\u201916,45\u201dO\u003c/b\u003e\n    \u003cBR\u003eOrdem(?): \u003cb\u003e3\u003c/b\u003e\n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.18060555555555, -23.108655555555558, -47.18060555555555, -23.108655555555558], "geometry": {"coordinates": [-47.18060555555555, -23.108655555555558], "type": "Point"}, "id": "5", "properties": {"Corpo H\u00eddrico": "Rio Jundia\u00ed", "ID": 6, "Latitude": "23\u00b006\u201931,16\u201dS", "Longitude": "47\u00b010\u201950,18\u201dO", "Ordem": 4, "Sondas Local": "Em Itaici, em Indaiatuba (JUNA03270)", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eEm Itaici, em Indaiatuba (JUNA03270)\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Jundia\u00ed\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e23\u00b006\u201931,16\u201dS\u003c/b\u003e / \u003cb\u003e47\u00b010\u201950,18\u201dO\u003c/b\u003e\n    \u003cBR\u003eOrdem(?): \u003cb\u003e4\u003c/b\u003e\n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.09906111111111, -23.004208333333334, -47.09906111111111, -23.004208333333334], "geometry": {"coordinates": [-47.09906111111111, -23.004208333333334], "type": "Point"}, "id": "6", "properties": {"Corpo H\u00eddrico": "Rio Capivari", "ID": 7, "Latitude": "23\u00b000\u201915,15\u201dS", "Longitude": "47\u00b005\u201956,62\u201dO", "Ordem": 5, "Sondas Local": "Capta\u00e7\u00e3o de Campinas (CPIV02130)", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eCapta\u00e7\u00e3o de Campinas (CPIV02130)\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Capivari\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e23\u00b000\u201915,15\u201dS\u003c/b\u003e / \u003cb\u003e47\u00b005\u201956,62\u201dO\u003c/b\u003e\n    \u003cBR\u003eOrdem(?): \u003cb\u003e5\u003c/b\u003e\n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-46.939341666666664, -22.92860277777778, -46.939341666666664, -22.92860277777778], "geometry": {"coordinates": [-46.939341666666664, -22.92860277777778], "type": "Point"}, "id": "7", "properties": {"Corpo H\u00eddrico": "Rio Atibaia", "ID": 8, "Latitude": "22\u00b055\u201942,97\u201dS", "Longitude": "46\u00b056\u201921,63\u201dO", "Ordem": 6, "Sondas Local": "Capta\u00e7\u00e3o Valinhos", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eCapta\u00e7\u00e3o Valinhos\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Atibaia\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e22\u00b055\u201942,97\u201dS\u003c/b\u003e / \u003cb\u003e46\u00b056\u201921,63\u201dO\u003c/b\u003e\n    \u003cBR\u003eOrdem(?): \u003cb\u003e6\u003c/b\u003e\n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-46.88006111111111, -22.688358333333333, -46.88006111111111, -22.688358333333333], "geometry": {"coordinates": [-46.88006111111111, -22.688358333333333], "type": "Point"}, "id": "8", "properties": {"Corpo H\u00eddrico": "Rio Camanducaia", "ID": 9, "Latitude": "22\u00b041\u201918,09\u201dS", "Longitude": "46\u00b052\u201948,22\u201dO", "Ordem": 7, "Sondas Local": "\u00c0 jusante da futura Barragem Duas Pontes", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003e\u00c0 jusante da futura Barragem Duas Pontes\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Camanducaia\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e22\u00b041\u201918,09\u201dS\u003c/b\u003e / \u003cb\u003e46\u00b052\u201948,22\u201dO\u003c/b\u003e\n    \u003cBR\u003eOrdem(?): \u003cb\u003e7\u003c/b\u003e\n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.67758611111111, -22.63285, -47.67758611111111, -22.63285], "geometry": {"coordinates": [-47.67758611111111, -22.63285], "type": "Point"}, "id": "9", "properties": {"Corpo H\u00eddrico": "Rio Corumbata\u00ed", "ID": 10, "Latitude": "22\u00b037\u201958,26\u201dS", "Longitude": "47\u00b040\u201939,31\u201dO", "Ordem": 8, "Sondas Local": "Capta\u00e7\u00e3o de Piracicaba", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eCapta\u00e7\u00e3o de Piracicaba\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Corumbata\u00ed\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e22\u00b037\u201958,26\u201dS\u003c/b\u003e / \u003cb\u003e47\u00b040\u201939,31\u201dO\u003c/b\u003e\n    \u003cBR\u003eOrdem(?): \u003cb\u003e8\u003c/b\u003e\n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-46.389725, -22.712855555555556, -46.389725, -22.712855555555556], "geometry": {"coordinates": [-46.389725, -22.712855555555556], "type": "Point"}, "id": "10", "properties": {"Corpo H\u00eddrico": "Rio Jaguari", "ID": 11, "Latitude": "22\u00b042\u201946,28\u201dS", "Longitude": "46\u00b023\u201923,01\u201dO", "Ordem": 9, "Sondas Local": "Em Vargem", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eEm Vargem\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Jaguari\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e22\u00b042\u201946,28\u201dS\u003c/b\u003e / \u003cb\u003e46\u00b023\u201923,01\u201dO\u003c/b\u003e\n    \u003cBR\u003eOrdem(?): \u003cb\u003e9\u003c/b\u003e\n    \u003c/div\u003e\n    "}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_7dfbab01eece4ffc9cd326eea35224ef.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Sondas Local"];
+    let aliases = ["Est. Autom\u00e1tica"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "direction": "right", "opacity": 0.9, "sticky": true});
+                     
+    
+    geo_json_7dfbab01eece4ffc9cd326eea35224ef.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["popup"];
+    let aliases = ["popup"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumpopup", "maxWidth": "400", "parseHtml": false, "show": false, "sticky": true});
+                     
+    
+        function geo_json_431db1a0c2444207acfe06c7a61b2c0d_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#DC143C", "fillColor": "#DC143C", "fillOpacity": 0.3, "weight": 1};
+            }
+        }
+        function geo_json_431db1a0c2444207acfe06c7a61b2c0d_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.6, "weight": 3};
+            }
+        }
+        function geo_json_431db1a0c2444207acfe06c7a61b2c0d_pointToLayer(feature, latlng) {
+            var opts = {};
+            
+            const iconOptions = {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            const iconRootAlias = L.AwesomeMarkers
+            opts.icon = new iconRootAlias.Icon(iconOptions)
+            
+            let style = geo_json_431db1a0c2444207acfe06c7a61b2c0d_styler(feature)
+            Object.assign(opts.icon.options, style)
+            
+            return new L.Marker(latlng, opts)
+        }
+
+        function geo_json_431db1a0c2444207acfe06c7a61b2c0d_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_431db1a0c2444207acfe06c7a61b2c0d.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_431db1a0c2444207acfe06c7a61b2c0d_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_431db1a0c2444207acfe06c7a61b2c0d = L.geoJson(null, {
+                smoothFactor: 1.0,
+                onEachFeature: geo_json_431db1a0c2444207acfe06c7a61b2c0d_onEachFeature,
+            
+                style: geo_json_431db1a0c2444207acfe06c7a61b2c0d_styler,
+                pointToLayer: geo_json_431db1a0c2444207acfe06c7a61b2c0d_pointToLayer
+        });
+
+        function geo_json_431db1a0c2444207acfe06c7a61b2c0d_add (data) {
+            geo_json_431db1a0c2444207acfe06c7a61b2c0d
+                .addData(data)
+                .addTo(map_f68d39c7e1524b4a892d678d5835c3be);
+        }
+            geo_json_431db1a0c2444207acfe06c7a61b2c0d_add({"bbox": [-47.9325, -23.2012, -46.5658, -22.2972], "features": [{"bbox": [-47.5875, -22.3742, -47.5875, -22.3742], "geometry": {"coordinates": [-47.5875, -22.3742], "type": "Point"}, "id": "0", "properties": {"Corpo H\u00eddrico": "C\u00f3rrego Olinda", "ID": 1, "Latitude": -22.3742, "Longitude": -47.5875, "Munic\u00edpio": "Rio Claro", "Nome da ETE": "ETE Jardim das Flores", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Jardim das Flores\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eC\u00f3rrego Olinda\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eRio Claro\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.3742\u003c/b\u003e / \u003cb\u003e-47.5875\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.5908, -22.4303, -47.5908, -22.4303], "geometry": {"coordinates": [-47.5908, -22.4303], "type": "Point"}, "id": "1", "properties": {"Corpo H\u00eddrico": "Rio Corumbata\u00ed", "ID": 2, "Latitude": -22.4303, "Longitude": -47.5908, "Munic\u00edpio": "Rio Claro", "Nome da ETE": "ETE Jardim Palmeiras", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Jardim Palmeiras\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Corumbata\u00ed\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eRio Claro\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.4303\u003c/b\u003e / \u003cb\u003e-47.5908\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.5922, -22.4611, -47.5922, -22.4611], "geometry": {"coordinates": [-47.5922, -22.4611], "type": "Point"}, "id": "2", "properties": {"Corpo H\u00eddrico": "Rio Corumbata\u00ed", "ID": 3, "Latitude": -22.4611, "Longitude": -47.5922, "Munic\u00edpio": "Rio Claro", "Nome da ETE": "ETE Jardim Novo", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Jardim Novo\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Corumbata\u00ed\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eRio Claro\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.4611\u003c/b\u003e / \u003cb\u003e-47.5922\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.5486, -22.4286, -47.5486, -22.4286], "geometry": {"coordinates": [-47.5486, -22.4286], "type": "Point"}, "id": "3", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Claro", "ID": 4, "Latitude": -22.4286, "Longitude": -47.5486, "Munic\u00edpio": "Rio Claro", "Nome da ETE": "ETE Jardim Conduta", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Jardim Conduta\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Claro\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eRio Claro\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.4286\u003c/b\u003e / \u003cb\u003e-47.5486\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.5703, -22.2972, -47.5703, -22.2972], "geometry": {"coordinates": [-47.5703, -22.2972], "type": "Point"}, "id": "4", "properties": {"Corpo H\u00eddrico": "Rio Corumbata\u00ed", "ID": 5, "Latitude": -22.2972, "Longitude": -47.5703, "Munic\u00edpio": "Rio Claro", "Nome da ETE": "ETE Ajapi", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Ajapi\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Corumbata\u00ed\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eRio Claro\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.2972\u003c/b\u003e / \u003cb\u003e-47.5703\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.6719, -22.6964, -47.6719, -22.6964], "geometry": {"coordinates": [-47.6719, -22.6964], "type": "Point"}, "id": "5", "properties": {"Corpo H\u00eddrico": "Rio Piracicaba", "ID": 6, "Latitude": -22.6964, "Longitude": -47.6719, "Munic\u00edpio": "Piracicaba", "Nome da ETE": "ETE Ponte do Caix\u00e3o", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Ponte do Caix\u00e3o\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Piracicaba\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003ePiracicaba\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.6964\u003c/b\u003e / \u003cb\u003e-47.6719\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.5292, -22.7389, -47.5292, -22.7389], "geometry": {"coordinates": [-47.5292, -22.7389], "type": "Point"}, "id": "6", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Tijuco Preto", "ID": 7, "Latitude": -22.7389, "Longitude": -47.5292, "Munic\u00edpio": "Piracicaba", "Nome da ETE": "ETE Tupi", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Tupi\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Tijuco Preto\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003ePiracicaba\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.7389\u003c/b\u003e / \u003cb\u003e-47.5292\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.6233, -22.7169, -47.6233, -22.7169], "geometry": {"coordinates": [-47.6233, -22.7169], "type": "Point"}, "id": "7", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Piracicamirim", "ID": 8, "Latitude": -22.7169, "Longitude": -47.6233, "Munic\u00edpio": "Piracicaba", "Nome da ETE": "ETE Piracicamirim", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Piracicamirim\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Piracicamirim\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003ePiracicaba\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.7169\u003c/b\u003e / \u003cb\u003e-47.6233\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.6061, -22.7011, -47.6061, -22.7011], "geometry": {"coordinates": [-47.6061, -22.7011], "type": "Point"}, "id": "8", "properties": {"Corpo H\u00eddrico": "Rio Piracicaba", "ID": 9, "Latitude": -22.7011, "Longitude": -47.6061, "Munic\u00edpio": "Piracicaba", "Nome da ETE": "ETE Capim Fino", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Capim Fino\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Piracicaba\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003ePiracicaba\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.7011\u003c/b\u003e / \u003cb\u003e-47.6061\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.7136, -22.6978, -47.7136, -22.6978], "geometry": {"coordinates": [-47.7136, -22.6978], "type": "Point"}, "id": "9", "properties": {"Corpo H\u00eddrico": "Rio Piracicaba", "ID": 10, "Latitude": -22.6978, "Longitude": -47.7136, "Munic\u00edpio": "Piracicaba", "Nome da ETE": "ETE Bela Vista", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Bela Vista\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Piracicaba\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003ePiracicaba\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.6978\u003c/b\u003e / \u003cb\u003e-47.7136\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.7669, -22.6956, -47.7669, -22.6956], "geometry": {"coordinates": [-47.7669, -22.6956], "type": "Point"}, "id": "10", "properties": {"Corpo H\u00eddrico": "Rio Piracicaba", "ID": 11, "Latitude": -22.6956, "Longitude": -47.7669, "Munic\u00edpio": "Piracicaba", "Nome da ETE": "ETE Artemis", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Artemis\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Piracicaba\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003ePiracicaba\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.6956\u003c/b\u003e / \u003cb\u003e-47.7669\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.9325, -22.8281, -47.9325, -22.8281], "geometry": {"coordinates": [-47.9325, -22.8281], "type": "Point"}, "id": "11", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Anhumas", "ID": 12, "Latitude": -22.8281, "Longitude": -47.9325, "Munic\u00edpio": "Piracicaba", "Nome da ETE": "ETE Anhumas", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Anhumas\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Anhumas\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003ePiracicaba\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.8281\u003c/b\u003e / \u003cb\u003e-47.9325\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-46.9787, -22.9453, -46.9787, -22.9453], "geometry": {"coordinates": [-46.9787, -22.9453], "type": "Point"}, "id": "12", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Pinheiros", "ID": 13, "Latitude": -22.9453, "Longitude": -46.9787, "Munic\u00edpio": "Valinhos", "Nome da ETE": "ETE Capuava", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Capuava\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Pinheiros\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eValinhos\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.9453\u003c/b\u003e / \u003cb\u003e-46.9787\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.1314, -22.8507, -47.1314, -22.8507], "geometry": {"coordinates": [-47.1314, -22.8507], "type": "Point"}, "id": "13", "properties": {"Corpo H\u00eddrico": "C\u00f3rrego Boa Vista", "ID": 14, "Latitude": -22.8507, "Longitude": -47.1314, "Munic\u00edpio": "Campinas", "Nome da ETE": "ETE CIATEC", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE CIATEC\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eC\u00f3rrego Boa Vista\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eCampinas\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.8507\u003c/b\u003e / \u003cb\u003e-47.1314\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.0097, -22.9291, -47.0097, -22.9291], "geometry": {"coordinates": [-47.0097, -22.9291], "type": "Point"}, "id": "14", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Samambaia", "ID": 15, "Latitude": -22.9291, "Longitude": -47.0097, "Munic\u00edpio": "Campinas", "Nome da ETE": "ETE Samambaia", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Samambaia\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Samambaia\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eCampinas\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.9291\u003c/b\u003e / \u003cb\u003e-47.0097\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.1184, -22.8416, -47.1184, -22.8416], "geometry": {"coordinates": [-47.1184, -22.8416], "type": "Point"}, "id": "15", "properties": {"Corpo H\u00eddrico": "C\u00f3rrego da Lagoa", "ID": 16, "Latitude": -22.8416, "Longitude": -47.1184, "Munic\u00edpio": "Campinas", "Nome da ETE": "ETE Santa M\u00f4nica", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Santa M\u00f4nica\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eC\u00f3rrego da Lagoa\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eCampinas\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.8416\u003c/b\u003e / \u003cb\u003e-47.1184\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.0299, -22.846, -47.0299, -22.846], "geometry": {"coordinates": [-47.0299, -22.846], "type": "Point"}, "id": "16", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Anhumas", "ID": 17, "Latitude": -22.846, "Longitude": -47.0299, "Munic\u00edpio": "Campinas", "Nome da ETE": "ETE Anhumas", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Anhumas\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Anhumas\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eCampinas\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.846\u003c/b\u003e / \u003cb\u003e-47.0299\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.1496, -22.8995, -47.1496, -22.8995], "geometry": {"coordinates": [-47.1496, -22.8995], "type": "Point"}, "id": "17", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Picarr\u00e3o", "ID": 18, "Latitude": -22.8995, "Longitude": -47.1496, "Munic\u00edpio": "Campinas", "Nome da ETE": "ETE Picarr\u00e3o", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Picarr\u00e3o\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Picarr\u00e3o\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eCampinas\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.8995\u003c/b\u003e / \u003cb\u003e-47.1496\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-46.9592, -22.8593, -46.9592, -22.8593], "geometry": {"coordinates": [-46.9592, -22.8593], "type": "Point"}, "id": "18", "properties": {"Corpo H\u00eddrico": "Rio Atibaia", "ID": 19, "Latitude": -22.8593, "Longitude": -46.9592, "Munic\u00edpio": "Campinas", "Nome da ETE": "ETE Sousas", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Sousas\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Atibaia\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eCampinas\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.8593\u003c/b\u003e / \u003cb\u003e-46.9592\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.0899, -22.7678, -47.0899, -22.7678], "geometry": {"coordinates": [-47.0899, -22.7678], "type": "Point"}, "id": "19", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Anhumas", "ID": 20, "Latitude": -22.7678, "Longitude": -47.0899, "Munic\u00edpio": "Campinas", "Nome da ETE": "ETE Bar\u00e3o Geraldo", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Bar\u00e3o Geraldo\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Anhumas\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eCampinas\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.7678\u003c/b\u003e / \u003cb\u003e-47.0899\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.154, -22.8237, -47.154, -22.8237], "geometry": {"coordinates": [-47.154, -22.8237], "type": "Point"}, "id": "20", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Quilombo", "ID": 21, "Latitude": -22.8237, "Longitude": -47.154, "Munic\u00edpio": "Campinas", "Nome da ETE": "ETE San Martin", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE San Martin\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Quilombo\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eCampinas\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.8237\u003c/b\u003e / \u003cb\u003e-47.154\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.17, -22.9544, -47.17, -22.9544], "geometry": {"coordinates": [-47.17, -22.9544], "type": "Point"}, "id": "21", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Picarr\u00e3o", "ID": 22, "Latitude": -22.9544, "Longitude": -47.17, "Munic\u00edpio": "Campinas", "Nome da ETE": "ETE Capivari I", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Capivari I\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Picarr\u00e3o\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eCampinas\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.9544\u003c/b\u003e / \u003cb\u003e-47.17\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.0973, -23.0027, -47.0973, -23.0027], "geometry": {"coordinates": [-47.0973, -23.0027], "type": "Point"}, "id": "22", "properties": {"Corpo H\u00eddrico": "Rio Capivari", "ID": 23, "Latitude": -23.0027, "Longitude": -47.0973, "Munic\u00edpio": "Campinas", "Nome da ETE": "ETE Nova Am\u00e9rica", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Nova Am\u00e9rica\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Capivari\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eCampinas\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-23.0027\u003c/b\u003e / \u003cb\u003e-47.0973\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.2214, -22.9567, -47.2214, -22.9567], "geometry": {"coordinates": [-47.2214, -22.9567], "type": "Point"}, "id": "23", "properties": {"Corpo H\u00eddrico": "Rio Capivari", "ID": 24, "Latitude": -22.9567, "Longitude": -47.2214, "Munic\u00edpio": "Campinas", "Nome da ETE": "ETE Capivari II", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Capivari II\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Capivari\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eCampinas\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.9567\u003c/b\u003e / \u003cb\u003e-47.2214\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.1764, -22.7619, -47.1764, -22.7619], "geometry": {"coordinates": [-47.1764, -22.7619], "type": "Point"}, "id": "24", "properties": {"Corpo H\u00eddrico": "Rio Atibaia", "ID": 25, "Latitude": -22.7619, "Longitude": -47.1764, "Munic\u00edpio": "Paul\u00ednia", "Nome da ETE": "ETE Paul\u00ednia", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Paul\u00ednia\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Atibaia\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003ePaul\u00ednia\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.7619\u003c/b\u003e / \u003cb\u003e-47.1764\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.4072, -22.7517, -47.4072, -22.7517], "geometry": {"coordinates": [-47.4072, -22.7517], "type": "Point"}, "id": "25", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o dos Toledos", "ID": 26, "Latitude": -22.7517, "Longitude": -47.4072, "Munic\u00edpio": "Santa B\u00e1rbara d\u0027Oeste", "Nome da ETE": "ETE Toledos I", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Toledos I\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o dos Toledos\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eSanta B\u00e1rbara d\u0027Oeste\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.7517\u003c/b\u003e / \u003cb\u003e-47.4072\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.3889, -22.7008, -47.3889, -22.7008], "geometry": {"coordinates": [-47.3889, -22.7008], "type": "Point"}, "id": "26", "properties": {"Corpo H\u00eddrico": "Rio Piracicaba", "ID": 27, "Latitude": -22.7008, "Longitude": -47.3889, "Munic\u00edpio": "Santa B\u00e1rbara d\u0027Oeste", "Nome da ETE": "ETE Balsa", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Balsa\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Piracicaba\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eSanta B\u00e1rbara d\u0027Oeste\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.7008\u003c/b\u003e / \u003cb\u003e-47.3889\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.3806, -22.7272, -47.3806, -22.7272], "geometry": {"coordinates": [-47.3806, -22.7272], "type": "Point"}, "id": "27", "properties": {"Corpo H\u00eddrico": "C\u00f3rrego Barroc\u00e3o", "ID": 28, "Latitude": -22.7272, "Longitude": -47.3806, "Munic\u00edpio": "Santa B\u00e1rbara d\u0027Oeste", "Nome da ETE": "ETE Nova Conquista", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Nova Conquista\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eC\u00f3rrego Barroc\u00e3o\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eSanta B\u00e1rbara d\u0027Oeste\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.7272\u003c/b\u003e / \u003cb\u003e-47.3806\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.4861, -22.7317, -47.4861, -22.7317], "geometry": {"coordinates": [-47.4861, -22.7317], "type": "Point"}, "id": "28", "properties": {"Corpo H\u00eddrico": "Rio Piracicaba", "ID": 29, "Latitude": -22.7317, "Longitude": -47.4861, "Munic\u00edpio": "Santa B\u00e1rbara d\u0027Oeste", "Nome da ETE": "ETE Cruzeiro do Sul", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Cruzeiro do Sul\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Piracicaba\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eSanta B\u00e1rbara d\u0027Oeste\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.7317\u003c/b\u003e / \u003cb\u003e-47.4861\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.4256, -22.805, -47.4256, -22.805], "geometry": {"coordinates": [-47.4256, -22.805], "type": "Point"}, "id": "29", "properties": {"Corpo H\u00eddrico": "Afluente do Ribeir\u00e3o dos Toledos", "ID": 30, "Latitude": -22.805, "Longitude": -47.4256, "Munic\u00edpio": "Santa B\u00e1rbara d\u0027Oeste", "Nome da ETE": "ETE Andorinhas", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Andorinhas\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eAfluente do Ribeir\u00e3o dos Toledos\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eSanta B\u00e1rbara d\u0027Oeste\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.805\u003c/b\u003e / \u003cb\u003e-47.4256\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.2517, -22.8369, -47.2517, -22.8369], "geometry": {"coordinates": [-47.2517, -22.8369], "type": "Point"}, "id": "30", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Quilombo", "ID": 31, "Latitude": -22.8369, "Longitude": -47.2517, "Munic\u00edpio": "Hortol\u00e2ndia", "Nome da ETE": "ETE Hortol\u00e2ndia", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Hortol\u00e2ndia\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Quilombo\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eHortol\u00e2ndia\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.8369\u003c/b\u003e / \u003cb\u003e-47.2517\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.3344, -22.7136, -47.3344, -22.7136], "geometry": {"coordinates": [-47.3344, -22.7136], "type": "Point"}, "id": "31", "properties": {"Corpo H\u00eddrico": "Rio Piracicaba", "ID": 32, "Latitude": -22.7136, "Longitude": -47.3344, "Munic\u00edpio": "Americana", "Nome da ETE": "ETE Carioba (Quilombo)", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Carioba (Quilombo)\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Piracicaba\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eAmericana\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.7136\u003c/b\u003e / \u003cb\u003e-47.3344\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.2567, -22.7256, -47.2567, -22.7256], "geometry": {"coordinates": [-47.2567, -22.7256], "type": "Point"}, "id": "32", "properties": {"Corpo H\u00eddrico": "C\u00f3rrego Olho d\u0027\u00c1gua - Represa Salto Grande", "ID": 33, "Latitude": -22.7256, "Longitude": -47.2567, "Munic\u00edpio": "Americana", "Nome da ETE": "ETE Praia Azul", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Praia Azul\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eC\u00f3rrego Olho d\u0027\u00c1gua - Represa Salto Grande\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eAmericana\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.7256\u003c/b\u003e / \u003cb\u003e-47.2567\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.3889, -22.7008, -47.3889, -22.7008], "geometry": {"coordinates": [-47.3889, -22.7008], "type": "Point"}, "id": "33", "properties": {"Corpo H\u00eddrico": "Rio Piracicaba", "ID": 34, "Latitude": -22.7008, "Longitude": -47.3889, "Munic\u00edpio": "Americana", "Nome da ETE": "ETE Balsa - Santa B\u00e1rbara d\u0027Oeste", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Balsa - Santa B\u00e1rbara d\u0027Oeste\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Piracicaba\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eAmericana\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.7008\u003c/b\u003e / \u003cb\u003e-47.3889\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.375, -22.6844, -47.375, -22.6844], "geometry": {"coordinates": [-47.375, -22.6844], "type": "Point"}, "id": "34", "properties": {"Corpo H\u00eddrico": "Rio Piracicaba", "ID": 35, "Latitude": -22.6844, "Longitude": -47.375, "Munic\u00edpio": "Americana", "Nome da ETE": "ETE Balsa", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Balsa\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Piracicaba\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eAmericana\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.6844\u003c/b\u003e / \u003cb\u003e-47.375\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.1156, -22.8367, -47.1156, -22.8367], "geometry": {"coordinates": [-47.1156, -22.8367], "type": "Point"}, "id": "35", "properties": {"Corpo H\u00eddrico": "C\u00f3rrego do Tijuco Preto", "ID": 36, "Latitude": -22.8367, "Longitude": -47.1156, "Munic\u00edpio": "Sumar\u00e9", "Nome da ETE": "ETE Aclima\u00e7\u00e3o", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Aclima\u00e7\u00e3o\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eC\u00f3rrego do Tijuco Preto\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eSumar\u00e9\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.8367\u003c/b\u003e / \u003cb\u003e-47.1156\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.2767, -22.8083, -47.2767, -22.8083], "geometry": {"coordinates": [-47.2767, -22.8083], "type": "Point"}, "id": "36", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Quilombo", "ID": 37, "Latitude": -22.8083, "Longitude": -47.2767, "Munic\u00edpio": "Sumar\u00e9", "Nome da ETE": "ETE Guaira", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Guaira\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Quilombo\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eSumar\u00e9\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.8083\u003c/b\u003e / \u003cb\u003e-47.2767\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.2814, -22.8225, -47.2814, -22.8225], "geometry": {"coordinates": [-47.2814, -22.8225], "type": "Point"}, "id": "37", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Quilombo", "ID": 38, "Latitude": -22.8225, "Longitude": -47.2814, "Munic\u00edpio": "Sumar\u00e9", "Nome da ETE": "ETE Portal do Lago", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Portal do Lago\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Quilombo\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eSumar\u00e9\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.8225\u003c/b\u003e / \u003cb\u003e-47.2814\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.1683, -22.8078, -47.1683, -22.8078], "geometry": {"coordinates": [-47.1683, -22.8078], "type": "Point"}, "id": "38", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Quilombo", "ID": 39, "Latitude": -22.8078, "Longitude": -47.1683, "Munic\u00edpio": "Sumar\u00e9", "Nome da ETE": "ETE Pavan", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Pavan\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Quilombo\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eSumar\u00e9\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.8078\u003c/b\u003e / \u003cb\u003e-47.1683\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.2342, -22.8222, -47.2342, -22.8222], "geometry": {"coordinates": [-47.2342, -22.8222], "type": "Point"}, "id": "39", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Quilombo", "ID": 40, "Latitude": -22.8222, "Longitude": -47.2342, "Munic\u00edpio": "Sumar\u00e9", "Nome da ETE": "ETE Vila Flora", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Vila Flora\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Quilombo\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eSumar\u00e9\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.8222\u003c/b\u003e / \u003cb\u003e-47.2342\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.2772, -22.7897, -47.2772, -22.7897], "geometry": {"coordinates": [-47.2772, -22.7897], "type": "Point"}, "id": "40", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Quilombo", "ID": 41, "Latitude": -22.7897, "Longitude": -47.2772, "Munic\u00edpio": "Sumar\u00e9", "Nome da ETE": "ETE Bordon I", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Bordon I\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Quilombo\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eSumar\u00e9\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.7897\u003c/b\u003e / \u003cb\u003e-47.2772\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.2139, -22.8214, -47.2139, -22.8214], "geometry": {"coordinates": [-47.2139, -22.8214], "type": "Point"}, "id": "41", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Quilombo", "ID": 42, "Latitude": -22.8214, "Longitude": -47.2139, "Munic\u00edpio": "Sumar\u00e9", "Nome da ETE": "ETE Real Park", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Real Park\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Quilombo\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eSumar\u00e9\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.8214\u003c/b\u003e / \u003cb\u003e-47.2139\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.2772, -22.7897, -47.2772, -22.7897], "geometry": {"coordinates": [-47.2772, -22.7897], "type": "Point"}, "id": "42", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Quilombo", "ID": 43, "Latitude": -22.7897, "Longitude": -47.2772, "Munic\u00edpio": "Sumar\u00e9", "Nome da ETE": "ETE Bordon II", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Bordon II\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Quilombo\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eSumar\u00e9\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.7897\u003c/b\u003e / \u003cb\u003e-47.2772\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.1989, -22.7997, -47.1989, -22.7997], "geometry": {"coordinates": [-47.1989, -22.7997], "type": "Point"}, "id": "43", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Quilombo", "ID": 44, "Latitude": -22.7997, "Longitude": -47.1989, "Munic\u00edpio": "Sumar\u00e9", "Nome da ETE": "ETE Volobueff", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Volobueff\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Quilombo\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eSumar\u00e9\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.7997\u003c/b\u003e / \u003cb\u003e-47.1989\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.2983, -22.8175, -47.2983, -22.8175], "geometry": {"coordinates": [-47.2983, -22.8175], "type": "Point"}, "id": "44", "properties": {"Corpo H\u00eddrico": "C\u00f3rrego Palmital", "ID": 45, "Latitude": -22.8175, "Longitude": -47.2983, "Munic\u00edpio": "Sumar\u00e9", "Nome da ETE": "ETE Vaughan", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Vaughan\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eC\u00f3rrego Palmital\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eSumar\u00e9\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.8175\u003c/b\u003e / \u003cb\u003e-47.2983\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.2533, -22.8431, -47.2533, -22.8431], "geometry": {"coordinates": [-47.2533, -22.8431], "type": "Point"}, "id": "45", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Jacuba", "ID": 46, "Latitude": -22.8431, "Longitude": -47.2533, "Munic\u00edpio": "Sumar\u00e9", "Nome da ETE": "ETE Amalia Luiza", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Amalia Luiza\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Jacuba\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eSumar\u00e9\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.8431\u003c/b\u003e / \u003cb\u003e-47.2533\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.2797, -22.8192, -47.2797, -22.8192], "geometry": {"coordinates": [-47.2797, -22.8192], "type": "Point"}, "id": "46", "properties": {"Corpo H\u00eddrico": "C\u00f3rrego Pinheirinho", "ID": 47, "Latitude": -22.8192, "Longitude": -47.2797, "Munic\u00edpio": "Sumar\u00e9", "Nome da ETE": "ETE Pq da Floresta", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Pq da Floresta\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eC\u00f3rrego Pinheirinho\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eSumar\u00e9\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.8192\u003c/b\u003e / \u003cb\u003e-47.2797\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.2211, -22.8144, -47.2211, -22.8144], "geometry": {"coordinates": [-47.2211, -22.8144], "type": "Point"}, "id": "47", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Quilombo", "ID": 48, "Latitude": -22.8144, "Longitude": -47.2211, "Munic\u00edpio": "Sumar\u00e9", "Nome da ETE": "ETE Jardim das \u00c1guas", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Jardim das \u00c1guas\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Quilombo\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eSumar\u00e9\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.8144\u003c/b\u003e / \u003cb\u003e-47.2211\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.1708, -22.8083, -47.1708, -22.8083], "geometry": {"coordinates": [-47.1708, -22.8083], "type": "Point"}, "id": "48", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Quilombo", "ID": 49, "Latitude": -22.8083, "Longitude": -47.1708, "Munic\u00edpio": "Sumar\u00e9", "Nome da ETE": "ETE Jardim Est\u00e2ncias", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Jardim Est\u00e2ncias\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Quilombo\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eSumar\u00e9\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.8083\u003c/b\u003e / \u003cb\u003e-47.1708\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.2031, -22.8236, -47.2031, -22.8236], "geometry": {"coordinates": [-47.2031, -22.8236], "type": "Point"}, "id": "49", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Quilombo", "ID": 50, "Latitude": -22.8236, "Longitude": -47.2031, "Munic\u00edpio": "Sumar\u00e9", "Nome da ETE": "ETE Santa Joana", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Santa Joana\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Quilombo\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eSumar\u00e9\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.8236\u003c/b\u003e / \u003cb\u003e-47.2031\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.1811, -22.8019, -47.1811, -22.8019], "geometry": {"coordinates": [-47.1811, -22.8019], "type": "Point"}, "id": "50", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Quilombo", "ID": 51, "Latitude": -22.8019, "Longitude": -47.1811, "Munic\u00edpio": "Sumar\u00e9", "Nome da ETE": "ETE Ipes II", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Ipes II\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Quilombo\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eSumar\u00e9\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.8019\u003c/b\u003e / \u003cb\u003e-47.1811\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-46.9164, -23.1081, -46.9164, -23.1081], "geometry": {"coordinates": [-46.9164, -23.1081], "type": "Point"}, "id": "51", "properties": {"Corpo H\u00eddrico": "Rio Capivari", "ID": 52, "Latitude": -23.1081, "Longitude": -46.9164, "Munic\u00edpio": "Jundia\u00ed", "Nome da ETE": "ETE S\u00e3o Jos\u00e9", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE S\u00e3o Jos\u00e9\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Capivari\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eJundia\u00ed\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-23.1081\u003c/b\u003e / \u003cb\u003e-46.9164\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.3203, -23.195, -47.3203, -23.195], "geometry": {"coordinates": [-47.3203, -23.195], "type": "Point"}, "id": "52", "properties": {"Corpo H\u00eddrico": "Rio Tiet\u00ea", "ID": 53, "Latitude": -23.195, "Longitude": -47.3203, "Munic\u00edpio": "Salto", "Nome da ETE": "ETE SaneSalto", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE SaneSalto\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Tiet\u00ea\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eSalto\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-23.195\u003c/b\u003e / \u003cb\u003e-47.3203\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.2389, -23.1497, -47.2389, -23.1497], "geometry": {"coordinates": [-47.2389, -23.1497], "type": "Point"}, "id": "53", "properties": {"Corpo H\u00eddrico": "Rio Jundia\u00ed", "ID": 54, "Latitude": -23.1497, "Longitude": -47.2389, "Munic\u00edpio": "Indaiatuba", "Nome da ETE": "ETE Mario Araldo Candello", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Mario Araldo Candello\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Jundia\u00ed\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eIndaiatuba\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-23.1497\u003c/b\u003e / \u003cb\u003e-47.2389\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-46.9994, -23.1375, -46.9994, -23.1375], "geometry": {"coordinates": [-46.9994, -23.1375], "type": "Point"}, "id": "54", "properties": {"Corpo H\u00eddrico": "Rio Jundia\u00ed", "ID": 55, "Latitude": -23.1375, "Longitude": -46.9994, "Munic\u00edpio": "Jundia\u00ed", "Nome da ETE": "ETE Varj\u00e3o", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Varj\u00e3o\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Jundia\u00ed\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eJundia\u00ed\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-23.1375\u003c/b\u003e / \u003cb\u003e-46.9994\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-46.9394, -23.1058, -46.9394, -23.1058], "geometry": {"coordinates": [-46.9394, -23.1058], "type": "Point"}, "id": "55", "properties": {"Corpo H\u00eddrico": "Afluente do Rio Capivari", "ID": 56, "Latitude": -23.1058, "Longitude": -46.9394, "Munic\u00edpio": "Jundia\u00ed", "Nome da ETE": "ETE Fernandes", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Fernandes\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eAfluente do Rio Capivari\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eJundia\u00ed\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-23.1058\u003c/b\u003e / \u003cb\u003e-46.9394\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-46.8524, -23.2012, -46.8524, -23.2012], "geometry": {"coordinates": [-46.8524, -23.2012], "type": "Point"}, "id": "56", "properties": {"Corpo H\u00eddrico": "Rio Jundia\u00ed", "ID": 57, "Latitude": -23.2012, "Longitude": -46.8524, "Munic\u00edpio": "V\u00e1rzea Paulista", "Nome da ETE": "ETE Varzea Paulista", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Varzea Paulista\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Jundia\u00ed\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eV\u00e1rzea Paulista\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-23.2012\u003c/b\u003e / \u003cb\u003e-46.8524\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.464, -22.5723, -47.464, -22.5723], "geometry": {"coordinates": [-47.464, -22.5723], "type": "Point"}, "id": "57", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o \u00c1gua da Serra", "ID": 58, "Latitude": -22.5723, "Longitude": -47.464, "Munic\u00edpio": "Limeira", "Nome da ETE": "ETE \u00c1gua da Serra", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE \u00c1gua da Serra\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o \u00c1gua da Serra\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eLimeira\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.5723\u003c/b\u003e / \u003cb\u003e-47.464\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.4388, -22.5917, -47.4388, -22.5917], "geometry": {"coordinates": [-47.4388, -22.5917], "type": "Point"}, "id": "58", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o da Graminha", "ID": 59, "Latitude": -22.5917, "Longitude": -47.4388, "Munic\u00edpio": "Limeira", "Nome da ETE": "ETE Graminha", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Graminha\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o da Graminha\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eLimeira\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.5917\u003c/b\u003e / \u003cb\u003e-47.4388\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.3754, -22.5963, -47.3754, -22.5963], "geometry": {"coordinates": [-47.3754, -22.5963], "type": "Point"}, "id": "59", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Tatu", "ID": 60, "Latitude": -22.5963, "Longitude": -47.3754, "Munic\u00edpio": "Limeira", "Nome da ETE": "ETE Tatu", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Tatu\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Tatu\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eLimeira\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.5963\u003c/b\u003e / \u003cb\u003e-47.3754\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-47.3508, -22.6504, -47.3508, -22.6504], "geometry": {"coordinates": [-47.3508, -22.6504], "type": "Point"}, "id": "60", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Tatu", "ID": 61, "Latitude": -22.6504, "Longitude": -47.3508, "Munic\u00edpio": "Limeira", "Nome da ETE": "ETE Lopes", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Lopes\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Tatu\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eLimeira\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.6504\u003c/b\u003e / \u003cb\u003e-47.3508\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-46.8408, -22.9825, -46.8408, -22.9825], "geometry": {"coordinates": [-46.8408, -22.9825], "type": "Point"}, "id": "61", "properties": {"Corpo H\u00eddrico": "Rio Atibaia", "ID": 62, "Latitude": -22.9825, "Longitude": -46.8408, "Munic\u00edpio": "Itatiba", "Nome da ETE": "ETE SABESP", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE SABESP\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Atibaia\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eItatiba\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.9825\u003c/b\u003e / \u003cb\u003e-46.8408\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-46.5961, -23.1269, -46.5961, -23.1269], "geometry": {"coordinates": [-46.5961, -23.1269], "type": "Point"}, "id": "62", "properties": {"Corpo H\u00eddrico": "Ribeir\u00e3o Folha Larga", "ID": 63, "Latitude": -23.1269, "Longitude": -46.5961, "Munic\u00edpio": "Atibaia", "Nome da ETE": "ETE Cerejeiras", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Cerejeiras\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRibeir\u00e3o Folha Larga\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eAtibaia\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-23.1269\u003c/b\u003e / \u003cb\u003e-46.5961\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-46.5794, -23.1258, -46.5794, -23.1258], "geometry": {"coordinates": [-46.5794, -23.1258], "type": "Point"}, "id": "63", "properties": {"Corpo H\u00eddrico": "C\u00f3rrego Onofre", "ID": 64, "Latitude": -23.1258, "Longitude": -46.5794, "Munic\u00edpio": "Atibaia", "Nome da ETE": "ETE Palmeiras", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Palmeiras\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eC\u00f3rrego Onofre\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eAtibaia\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-23.1258\u003c/b\u003e / \u003cb\u003e-46.5794\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-46.5658, -23.1092, -46.5658, -23.1092], "geometry": {"coordinates": [-46.5658, -23.1092], "type": "Point"}, "id": "64", "properties": {"Corpo H\u00eddrico": "Rio Atibaia", "ID": 65, "Latitude": -23.1092, "Longitude": -46.5658, "Munic\u00edpio": "Atibaia", "Nome da ETE": "ETE Estoril (M\u00f3dulo I e II)", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Estoril (M\u00f3dulo I e II)\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Atibaia\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eAtibaia\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-23.1092\u003c/b\u003e / \u003cb\u003e-46.5658\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}, {"bbox": [-46.5692, -22.9064, -46.5692, -22.9064], "geometry": {"coordinates": [-46.5692, -22.9064], "type": "Point"}, "id": "65", "properties": {"Corpo H\u00eddrico": "Rio Jaguari", "ID": 66, "Latitude": -22.9064, "Longitude": -46.5692, "Munic\u00edpio": "Bragan\u00e7a Paulista", "Nome da ETE": "ETE Bragan\u00e7a Sede", "popup": "\n    \u003cdiv\u003e\n    \u003ch5\u003eETE Bragan\u00e7a Sede\u003c/h5\u003e\n    \u003cbr\u003eCurso d\u0027\u00e1gua: \u003cb\u003eRio Jaguari\u003c/b\u003e\n    \u003cBR\u003eMunic\u00edpio: \u003cb\u003eBragan\u00e7a Paulista\u003c/b\u003e\n    \u003cbr\u003eCoordenadas: \u003cb\u003e-22.9064\u003c/b\u003e / \u003cb\u003e-46.5692\u003c/b\u003e    \n    \u003c/div\u003e\n    "}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_431db1a0c2444207acfe06c7a61b2c0d.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Nome da ETE"];
+    let aliases = ["ETE"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "direction": "right", "opacity": 0.9, "sticky": true});
+                     
+    
+    geo_json_431db1a0c2444207acfe06c7a61b2c0d.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["popup"];
+    let aliases = ["popup"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumpopup", "maxWidth": "400", "parseHtml": false, "show": false, "sticky": true});
+                     
+    
+            map_f68d39c7e1524b4a892d678d5835c3be.fitBounds(
+                [[-23.2012, -47.9325], [-22.2972, -46.5658]],
+                {}
+            );
+        
+    
+            L.control.fullscreen(
+                {"forceSeparateButton": false, "position": "topleft", "title": "Clique para Maximizar", "titleCancel": "Mininizar"}
+            ).addTo(map_f68d39c7e1524b4a892d678d5835c3be);
+        
+    
+            var layer_control_b71dca26c09a4655b279075e7efb0422 = {
+                base_layers : {
+                    "Google Terrain" : tile_layer_21d17a2046c440baa0520129e0ec7107,
+                    "Google Hybrid" : tile_layer_a624f504f0d444958d744b293cbb5cce,
+                    "Google Streets" : tile_layer_dca91bbea73644ab8a4c60ba7e0fe528,
+                    "Google Satelite" : tile_layer_0403d5988bfd4ca885e00c067585893c,
+                },
+                overlays :  {
+                    "Est. Autom\u00e1ticas Previstas" : geo_json_7dfbab01eece4ffc9cd326eea35224ef,
+                    "Est. Tratamento Esgoto" : geo_json_431db1a0c2444207acfe06c7a61b2c0d,
+                },
+            };
+            L.control.layers(
+                layer_control_b71dca26c09a4655b279075e7efb0422.base_layers,
+                layer_control_b71dca26c09a4655b279075e7efb0422.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_f68d39c7e1524b4a892d678d5835c3be);
+            tile_layer_a624f504f0d444958d744b293cbb5cce.remove();
+            tile_layer_dca91bbea73644ab8a4c60ba7e0fe528.remove();
+            tile_layer_0403d5988bfd4ca885e00c067585893c.remove();
+        
+</script>

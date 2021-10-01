@@ -10,7 +10,6 @@ tags:
   - readability
   - standard
 author: Michel Metran
-
 ---
 
 Pontos de Monitoramento
