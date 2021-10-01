@@ -10,6 +10,8 @@ tags:
   - readability
   - standard
 
+classes: wide
+
 #categories: [Blog]
 #tags: [Post Formats, notice]
 #link: https://github.com
