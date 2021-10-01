@@ -113,6 +113,7 @@ defaults:
 #     related: true
 #     toc: true
 #     toc_sticky: true
+
   # _maps
   - scope:
       path: "maps"
