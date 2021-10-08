@@ -23,6 +23,8 @@ Com objetivo de promover a instalação de novas estações de monitoramento aut
 - Estações de Monitoramento Previstas pelo órgão ambiental (CETESB);
 - Estações de Monitoramento Existentes do empresas e municípios;
 
+<br>
+
 Além de pontos de interesse da bacia, que afetam a qualidade das águas, tais como:
 
 - Estações de Tratamento de Esgoto dos municípios;
