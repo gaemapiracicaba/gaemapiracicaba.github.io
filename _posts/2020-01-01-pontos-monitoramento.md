@@ -7,7 +7,7 @@ toc: false
 categories:
   - blog
 tags:
-  - recursos híricos
+  - recursos hídricos
   - qualidade
   - enquadramento
   - água bruta
