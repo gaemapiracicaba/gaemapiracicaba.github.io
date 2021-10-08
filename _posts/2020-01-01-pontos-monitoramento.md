@@ -6,13 +6,29 @@ excerpt_separator: "<!--more-->"
 categories:
   - Blog
 tags:
-  - Post Formats
-  - readability
-  - standard
+  - recursos híricos
+  - qualidade
+  - enquadramento
+  - água bruta
 author: Michel Metran
+
 ---
 
-Pontos de Monitoramento
+
+
+Com objetivo de promover a instalação de novas estações de monitoramento automático da qualidade de água bruta (água dos rios) das bacias hidrográficas dos rios Piracicaba, Capivari e Jundiaí, que compõe o que é conhecido como "Bacias PCJ", buscou-se melhor compreender quais são os pontos que existem:
+
+- Estações de Monitoramento Existentes do órgão ambiental (CETESB);
+- Estações de Monitoramento Previstas pelo órgão ambiental (CETESB);
+- Estações de Monitoramento Existentes do empresas e municípios;
+
+Além de pontos de interesse da bacia, que afetam a qualidade das águas, tais como:
+
+- Estações de Tratamento de Esgoto dos municípios;
+
+
+
+Abaixo é apresentado um mapa que possibilita visualizar as informações até o momento levantadas:
 
 <iframe src="https://gaemapiracicaba.github.io/assets/ic-05-14/map.html" width="640" height="480"  frameborder="0" allowfullscreen></iframe>
 
