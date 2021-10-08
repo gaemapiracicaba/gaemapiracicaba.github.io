@@ -31,6 +31,6 @@ Além de pontos de interesse da bacia, que afetam a qualidade das águas, tais c
 
 Abaixo é apresentado um mapa que possibilita visualizar as informações até o momento levantadas:
 
-<iframe src="https://gaemapiracicaba.github.io/assets/ic-05-14/map.html" width="640" height="480"  frameborder="0" allowfullscreen></iframe>
+<iframe src="https://gaemapiracicaba.github.io/assets/ic-05-14/map.html" width="100%" height="480"  frameborder="0" allowfullscreen></iframe>
 
 <!--more-->
