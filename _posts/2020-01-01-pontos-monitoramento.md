@@ -10,13 +10,14 @@ tags:
   - qualidade
   - enquadramento
   - água bruta
+classes: wide
 author: Michel Metran
 
 ---
 
 
 
-Com objetivo de promover a instalação de novas estações de monitoramento automático da qualidade de água bruta (água dos rios) das bacias hidrográficas dos rios Piracicaba, Capivari e Jundiaí, que compõe o que é conhecido como "Bacias PCJ", buscou-se melhor compreender quais são os pontos que existem:
+Com objetivo de promover a instalação de novas estações de monitoramento automático da qualidade de água bruta (água dos rios) das bacias hidrográficas dos rios Piracicaba, Capivari e Jundiaí, que compõe o que é conhecido como "Bacias PCJ", buscou-se identificar a localização das:
 
 - Estações de Monitoramento Existentes do órgão ambiental (CETESB);
 - Estações de Monitoramento Previstas pelo órgão ambiental (CETESB);
