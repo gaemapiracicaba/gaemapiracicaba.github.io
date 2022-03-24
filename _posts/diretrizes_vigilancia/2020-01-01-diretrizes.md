@@ -1,5 +1,5 @@
 ---
-title: "Diretrizes Vigilância"
+title: "Potabilidade: Monitoramento pela Vigilância Sanitária"
 date: 2022-03-24T12:00:00-03:00
 last_modified_at: 2022-03-24T12:00:00-03:00
 excerpt_separator: "<!--more-->"
@@ -26,9 +26,9 @@ header:
       url: "https://sistemainfoaguas.cetesb.sp.gov.br/"
 ---
 
-A avaliação da potabilidade da área servida a população, por meio do abastecimento público, segue diversas normativas e diretivas em constante modificação. Em 2021 o Anexo XX da Portaria de Consolidação do Ministério da Saúde nº 05/2017 passou por modificações devido a Portaria MS nº 888/2021. Ainda assim, a interpretação e atendimento à norma só se faz possível quando recorremos a outros intrumentos.
+A avaliação da potabilidade da água servida a população, por meio do abastecimento público, segue diversas normativas e diretivas em constante modificação. Em 2021 o Anexo XX da Portaria de Consolidação do Ministério da Saúde nº 05/2017 passou por modificações devido a Portaria MS nº 888/2021. Ainda assim, a interpretação e atendimento à norma só se faz possível quando recorremos a outros intrumentos.
 
-É somente na publicação [Diretriz Nacional do Plano de Amostragem da Vigilância da Qualidade da Água para Consumo Humano da Vigilância Sanitária](http://bvsms.saude.gov.br/bvs/publicacoes/diretriz_nacional_plano_amostragem_agua.pdf), de 2016, que se explicita o número de amostras que deve ser realizada, mensalmente, pelas vigilâncias sanitárias municipais. Importante destacar que trata-se meramente de uma *diretriz*. Ainda assim, no cenário atual, onde as portarias do Ministério da Saúde não abordam o tema em suas Portarias, a publicação de 2016 preenche um vácuo normativo na avaliação da amostragem realizada pelas vigilância sanitária.
+É somente na publicação [Diretriz Nacional do Plano de Amostragem da Vigilância da Qualidade da Água para Consumo Humano da Vigilância Sanitária](http://bvsms.saude.gov.br/bvs/publicacoes/diretriz_nacional_plano_amostragem_agua.pdf), de 2016, que se explicita detalhes e é informado qual o número de amostras que deve ser realizada, mensalmente, pelas vigilâncias sanitárias municipais. Importante destacar que trata-se meramente de uma *diretriz*. Ainda assim, no cenário atual, onde as portarias do Ministério da Saúde não abordam o tema em suas Portarias, a publicação de 2016 preenche um vácuo normativo, possibilitando a avaliação da amostragem realizada pelas vigilâncias sanitárias municipais.
 
 No gráfico abaixo é sintetizado o número de amostras em função da população, sendo possível avaliar qual o número mínimo de amostras mensais que as vigilâncias municipais devem realizar para os parâmetros:
 
