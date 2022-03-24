@@ -14,7 +14,7 @@ tags:
 classes: wide
 author: Michel Metran
 comments: false
-excerpt: Amostras a serem realizadas pela Vigilância Sanitária Municipal
+excerpt: Definição do número de amostras a serem realizadas pelas vigilâncias sanitárias municipais
 share: false
 related: false
 header:
@@ -26,8 +26,20 @@ header:
       url: "https://sistemainfoaguas.cetesb.sp.gov.br/"
 ---
 
-O Sistema de Informação [Infoáguas](https://sistemainfoaguas.cetesb.sp.gov.br/) é uma iniciativa da CETESB<!--more-->, que visa disponibilizar ao público interessado informações sobre a qualidade das águas do Estado de São Paulo. Por meio do sistema, é possível ter acesso aos resultados dos parâmetros analisados sistematicamente pela CETESB em seu Programa de Monitoramento de Águas Superficiais, nos mais de 600 pontos monitorados desde a década de 70.
+A avaliação da potabilidade da área servida a população, por meio do abastecimento público, segue diversas normativas e diretivas em constante modificação. Em 2021 o Anexo XX da Portaria de Consolidação do Ministério da Saúde nº 05/2017 passou por modificações devido a Portaria MS nº 888/2021. Ainda assim, a interpretação e atendimento à norma só se faz possível quando recorremos a outros intrumentos.
 
-Os pontos de monitoramento são apresentados no mapa abaixo, bem como os dados de monitoramento, os quais são acessados ao clicar no ponto de interesse.
+É somente na publicação [Diretriz Nacional do Plano de Amostragem da Vigilância da Qualidade da Água para Consumo Humano da Vigilância Sanitária](http://bvsms.saude.gov.br/bvs/publicacoes/diretriz_nacional_plano_amostragem_agua.pdf), de 2016, que se explicita o número de amostras que deve ser realizada, mensalmente, pelas vigilâncias sanitárias municipais. Importante destacar que trata-se meramente de uma *diretriz*. Ainda assim, no cenário atual, onde as portarias do Ministério da Saúde não abordam o tema em suas Portarias, a publicação de 2016 preenche um vácuo normativo na avaliação da amostragem realizada pelas vigilância sanitária.
+
+No gráfico abaixo é sintetizado o número de amostras em função da população, sendo possível avaliar qual o número mínimo de amostras mensais que as vigilâncias municipais devem realizar para os parâmetros:
+
+- Cloro Residual
+- Turbidez
+- Coliformes
+- *Escherichia coli*
+- Fluoreto
 
 <iframe src="/assets/diretrizes_vigilancia/graph/n_amostras_habitantes.html" width="100%" height="650"  frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+<br>
+
+O presente trabalho faz parte de um projeto maior, que objetiva avaliar a potabilidade dos municípios paulistas com auxílio de programação.
