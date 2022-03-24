@@ -30,12 +30,4 @@ O Sistema de Informação [Infoáguas](https://sistemainfoaguas.cetesb.sp.gov.br
 
 Os pontos de monitoramento são apresentados no mapa abaixo, bem como os dados de monitoramento, os quais são acessados ao clicar no ponto de interesse.
 
-<iframe src="/assets/diretrizes_vigilancia/graph/n_amostras_habitantes.html" width="100%" height="480"  frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
-<br>
-
-É possível também acessar os pontos por meio do arquivo em outros formatos:
-
-<a href="/assets/sp_cetesb_infoaguas/geo/ptos_monitoramento.kml" class="btn btn--primary">Download *kml*</a>
-<br>
-<a href="/assets/sp_cetesb_infoaguas/geo/ptos_monitoramento.geojson" class="btn btn--primary">Download *geojson*</a>
+<iframe src="/assets/diretrizes_vigilancia/graph/n_amostras_habitantes.html" width="100%" height="650"  frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
