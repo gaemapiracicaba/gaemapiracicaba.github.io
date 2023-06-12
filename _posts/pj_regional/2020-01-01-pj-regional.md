@@ -34,7 +34,7 @@ Em 07.06.2023 o MPSP noticiou a criação das PJ Regionais. Utilizando as inform
 Para quem quiser, é possível baixar os arquivos de mapas em formato _geopackage_ (extensão _.gpkg_) para uso em _softwares_ de geoprocessamento.
 
 <a href="/assets/pj_regional/sp_mpsp_gaema.gpkg" class="btn btn--primary">GAEMA</a>  
-<a href="/assets/pj_regional/sp_mpsp_macroregioes.gpkg" class="btn btn--primary">Macrorregiões</a>  
+<a href="/assets/pj_regional/sp_mpsp_macrorregioes.gpkg" class="btn btn--primary">Macrorregiões</a>  
 <a href="/assets/pj_regional/sp_mpsp_pjreg.gpkg" class="btn btn--primary">PJ Regional</a>  
 <a href="/assets/pj_regional/sp_mpsp_rp.gpkg" class="btn btn--primary">Redes Protetivas</a>  
 <a href="/assets/pj_regional/sp_mpsp_ar.gpkg" class="btn btn--primary">Áreas Regionais</a>
