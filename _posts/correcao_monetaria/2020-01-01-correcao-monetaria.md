@@ -66,8 +66,8 @@ No _Microsoft Excel_ é possível também manter o arquivo atualizado em uma aba
 
 É possível também acessar a tabela em formatos _.csv_ e _.pdf_ nos botões abaixo:
 
-<a href="https://gaemapiracicaba.github.io/assets/correcao_monetaria/data/tabela_debitos_judiciais.csv" class="btn btn--primary">Download _csv_</a>  
-<a href="https://gaemapiracicaba.github.io/assets/correcao_monetaria/data/tabela_debitos_judiciais.pdf" class="btn btn--primary" target="_blank">Download _pdf_</a>
+<a href="/assets/correcao_monetaria/data/tabela_debitos_judiciais.csv" class="btn btn--primary">Download _csv_</a>  
+<a href="/assets/correcao_monetaria/data/tabela_debitos_judiciais.pdf" class="btn btn--primary" target="_blank">Download _pdf_</a>
 
 <br>
 
